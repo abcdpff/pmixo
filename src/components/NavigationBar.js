@@ -1,6 +1,8 @@
 import React from 'react';
 import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
+import { UserOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import styled from 'styled-components';
+
 const Styles = styled.div`
   .navbar { background-color: #fff; }
   a, .navbar-nav, .navbar-light .nav-link {
@@ -30,6 +32,9 @@ const Styles = styled.div`
     line-height: 21px;
     outline: none;
   }
+  .anticon {
+    vertical-align: unset;
+  }
 `;
 const NavigationBar = () => (
   <Styles>
@@ -37,12 +42,18 @@ const NavigationBar = () => (
       <Navbar.Brand href="/">PMIXO</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Form className="form-center">
-        <FormControl type="text" placeholder="Search" className="" />
+        <FormControl type="text" placeholder="查找" className="" />
       </Form>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="/about">About</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/home">家居</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/">办公</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/">商用</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/">配件</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/">技术支持</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/"></Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/"><UserOutlined style={{ fontSize: '19px' }} /></Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/"><ShoppingCartOutlined style={{ fontSize: '19px' }} /></Nav.Link></Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
