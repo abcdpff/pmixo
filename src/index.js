@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
+import 'antd/dist/antd.css';
 
 class RouteApp extends Component {
   constructor(props) {
