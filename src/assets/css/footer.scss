@@ -23,10 +23,14 @@
     }
   }
   .copyright {
-    display: flex;
 
-    p:first-child {
-      padding-right: 20px;
+    p span {
+      padding-left: 10px;
     }
+
+    a {
+      color: #484848;
+    }
+
   }
 }
