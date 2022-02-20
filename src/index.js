@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
+import Office from '../src/pages/Office';
+import Magicbox from '../src/pages/Magicbox';
 import 'antd/dist/antd.css';
 
 class RouteApp extends Component {
@@ -16,10 +18,14 @@ class RouteApp extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Switch>
-          <Redirect from='/home' to='/' />
-          <Route exact path="/" component={Home}></Route>
-        </Switch>
+        <div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/office" component={Office} />
+            <Route path="/products/magicbox" component={Magicbox} />
+            <Redirect from='/home' to='/' />
+          </Switch>
+        </div>
       </BrowserRouter>
     )
   }
