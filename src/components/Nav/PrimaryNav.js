@@ -2,7 +2,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Popover } from 'antd';
-import logo from './../../assets/image/logo.svg';
+import logo from './../../assets/image/logowithtext.svg';
 import CategoryList from './CategoryList';
 import MainList from './MainList';//left submenu
 import { navData } from './NavConfig';
@@ -13,8 +13,8 @@ const Nav = styled.div`
 `;
 
 const Logo = styled.div`
-  height: 50px;
-  width: 150px;
+  height: 70px;
+  width: 190px;
   background-image: url('${logo}');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -30,17 +30,19 @@ const NavItems = styled.ul`
 const NavItem = styled.li`
   .nav-link {
     color: #111;
-    padding: 15px 12px;
+    line-height: 22px;
+    padding: 24px 16px;
+    font-size: 15px;
   }
 `;
 
 const DropdownContainer = styled.div`
   border-top: 1px solid #f5f5f5;
   border-bottom: 1px solid #f5f5f5;
-  top: 51px;
+  top: 70px;
+  height: 100%;
   width: 100%;
   left: 0;
-  // height: 100vh;
   padding: 0px 100px;
   background-color: #fff;
   position: fixed;

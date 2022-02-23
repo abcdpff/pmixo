@@ -2,22 +2,16 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const CategoryBox = styled.div`
-  // width: 75px;
-  // width: 25%;
-  // text-align: center;
-  // margin: 10px 15px 15px 15px;
-
-  // width: 25%;
+  width: 120px;
   text-align: center;
   margin: 15px 15px 15px 15px;
   position: relative;
-  display: inline-block;
+  display: inline-grid;
 `;
 
 const ImgBg = styled.div`
   height: 120px;
   width: 120px;
-  // width: 25%;
   ${({ imageUrl }) => `background-image: url('${imageUrl}');`}
 
   // background-image: url('https://res.app.ikea.cn/static/public/subcatalog/bm003/thumbnail.png?v=20220104');
